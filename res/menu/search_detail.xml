@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    >
+
+    <item
+        android:showAsAction="always"
+        android:title="Expand">
+        <menu>
+            <item
+                android:id="@+id/item_call"
+                android:icon="@drawable/call"
+                android:title="Call">
+            </item>
+            <item
+                android:id="@+id/item_map"
+                android:icon="@drawable/map"
+                android:title="Map">
+            </item>
+            <item
+                android:id="@+id/item_direction"
+                android:icon="@drawable/direction"
+                android:title="Direction">
+            </item>
+            <item
+                android:id="@+id/item_email"
+                android:icon="@drawable/email"
+                android:title="Email">
+            </item>
+        </menu>
+    </item>
+  
+
+</menu>
