@@ -1,4 +1,4 @@
-# HotelSquare Android App Repository
+# HotelSquare Android App
 ====================================
 
  HotelSquare android application tells about the details of agent and hotels . It can search hotel by its name or city name and lets you know all about the hotels and agents .
