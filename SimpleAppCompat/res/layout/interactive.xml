@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/i_img"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/darker_gray"
+                    android:contentDescription="@string/hotel_page"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/i_hotel_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:text="@string/hotel_page"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/i_hotel_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/hotel_page"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#808080" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/details"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="22sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/holo_blue_light" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/hotel_page"
+                            android:src="@drawable/phone" />
+
+                        <TextView
+                            android:id="@+id/i_contact"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="@string/hotel_page"
+                            android:textColor="#808080"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#808080"
+                        android:paddingTop="7dp" />
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/hotel_page"
+                            android:src="@drawable/fax" />
+
+                        <TextView
+                            android:id="@+id/i_fax"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="@string/hotel_page"
+                            android:textColor="#808080"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#808080"
+                        android:paddingTop="7dp" />
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/hotel_page"
+                            android:src="@drawable/mail" />
+
+                        <TextView
+                            android:id="@+id/i_email_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="@string/hotel_page"
+                            android:textColor="#808080"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#808080"
+                        android:paddingTop="7dp" />
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/hotel_page"
+                            android:src="@drawable/region" />
+
+                        <TextView
+                            android:id="@+id/i_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="@string/hotel_page"
+                            android:textColor="#808080"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#808080"
+                        android:paddingTop="7dp" />
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/hotel_page"
+                            android:src="@drawable/hoteltype" />
+
+                        <TextView
+                            android:id="@+id/i_star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="@string/hotel_page"
+                            android:textColor="#808080"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#808080"
+                        android:paddingTop="7dp" />
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/agent_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/hotel_page"
+                            android:src="@drawable/room" />
+
+                        <TextView
+                            android:id="@+id/i_rooms"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="@string/hotel_page"
+                            android:textColor="#808080"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <View
+                        android:id="@+id/view_web"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#808080"
+                        android:paddingTop="7dp" />
+
+                    <TableRow
+                        android:id="@+id/view_table"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/hotel_page"
+                            android:src="@drawable/internet" />
+
+                        <TextView
+                            android:id="@+id/i_website"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="@string/hotel_page"
+                            android:textColor="#808080"
+                            android:textSize="15sp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#808080"
+            android:paddingTop="7dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/inter_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/hotel_page"
+                    android:src="@drawable/call" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/call"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/map_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/inter_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/hotel_page"
+                    android:src="@drawable/map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/map"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/inter_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/hotel_page"
+                    android:src="@drawable/mailsend" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#808080"
+            android:paddingTop="7dp" />
+    </LinearLayout>
+
+</ScrollView>

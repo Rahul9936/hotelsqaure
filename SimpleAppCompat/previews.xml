@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<previews>
+
+    <preview
+        name="Nexus 4"
+        activity="com.example.navigation.MainActivity"
+        config="layout-sw384dp-w384dp-h640dp-normal-notlong-port-notnight-xhdpi-finger-keyssoft-nokeys-navhidden-nonav-1280x768-v18"
+        device="Nexus 4"
+        devicestate="Portrait"
+        target="Android 4.3"
+        theme="@style/Theme.AppCompat.Light" >
+    </preview>
+
+</previews>
