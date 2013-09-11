@@ -31,8 +31,5 @@
  * Mitin Dixit 	
 
 
-# Valuable Contributions
- * Tarun Kaushik
- * Manish Verma
 
  
