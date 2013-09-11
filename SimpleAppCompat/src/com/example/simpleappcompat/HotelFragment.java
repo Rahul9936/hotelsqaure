@@ -133,6 +133,8 @@ public class HotelFragment extends Fragment implements
 				load_status = true;
 				ListHolder.setList(list_data);
 				settingListAdapter(list_data);
+				LinearLayout linear_ = (LinearLayout) view.findViewById(R.id.text_visibility);
+				linear_.setVisibility(View.GONE);
 			}else if(statu.status == ViewHolder.data_not_found){
 				Log.d("LoadStatus", ViewHolder.data_not_found + "data not found" );
 				showToast("Gosh! No Hotel Found By this name ");
