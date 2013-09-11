@@ -25,7 +25,7 @@ public class SearchDetail extends ActionBarActivity implements
 		LoaderCallbacks<HashMap>, OnClickListener {
 
 	ImageView img;
-	String hotel_name, hotel_city, hotel_phone;
+	String hotel_name, hotel_city, hotel_phone, hotel_email;
 	String hotel_lat, hotel_lng;
 	boolean check = false;
 	ImageButton btn_map, btn_call, btn_email;
@@ -37,7 +37,7 @@ public class SearchDetail extends ActionBarActivity implements
 		hotel_phone = get.phone;
 		String hotel_state = get.state;
 		String hotel_address = get.address;
-		String hotel_email = get.email;
+		hotel_email = get.email;
 
 		((TextView) findViewById(R.id.i_hotel_name)).setText(hotel_name);
 		((TextView) findViewById(R.id.i_hotel_address)).setText(hotel_address);
@@ -216,8 +216,7 @@ public class SearchDetail extends ActionBarActivity implements
 			break;
 		case R.id.inter_email:
 			Intent email = new Intent(Intent.ACTION_SEND);
-			email.putExtra(Intent.EXTRA_EMAIL,
-					new String[] { "rs11292@gmail.com" });
+			email.putExtra(Intent.EXTRA_EMAIL, new String[]{hotel_email});
 			email.putExtra(Intent.EXTRA_SUBJECT, "subject");
 			email.putExtra(Intent.EXTRA_TEXT, "Hello Buddy How are you");
 			email.setType("message/rfc822");
